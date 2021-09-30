@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/sympp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20dp" android:textColor="#000" android:id="@+id/textView3" android:layout_width="295dp" android:layout_height="397dp" android:text="  symptomps:          1. temperature is 103 F (39.4 C) or higher.          2. Severe headache          3. Unusual skin rash,          4. especially if the rash          5. rapidly worsens 6.Unusual sensitivity to          7.bright light          8.Stiff neck and pain  " app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</android.support.constraint.ConstraintLayout>

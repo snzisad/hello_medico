@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorLight" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16dp" android:textColor="@color/colorDark" android:gravity="center" android:id="@+id/tvPharmacyName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pharmacy Name"/>
+    <TextView android:textSize="15dp" android:gravity="center" android:id="@+id/tvPharmacyLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="Pharmacy Location"/>
+    <TextView android:textSize="15dp" android:gravity="center" android:id="@+id/tvPharmacyPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Phone: 0184848"/>
+    <TextView android:textSize="16dp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/tvcall" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Call for Order Medicine"/>
+</LinearLayout>

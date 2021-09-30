@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_editButton" android:padding="20px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="60px" android:layout_height="60px" android:layout_marginBottom="10px" android:src="@drawable/ic_edit_black_24dp"/>
+        <TextView android:textColor="#008000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_deleteButton" android:padding="20px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:layout_width="60px" android:layout_height="60px" android:layout_marginBottom="10px" android:src="@drawable/ic_delete_black_24dp"/>
+        <TextView android:textColor="#ff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete"/>
+    </LinearLayout>
+</LinearLayout>

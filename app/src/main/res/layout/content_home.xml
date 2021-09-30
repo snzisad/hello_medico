@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="155dp" android:src="@drawable/banner"/>
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="1dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="120dp" android:layout_weight="1">
+                    <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutBtnSearchDiseases" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_search"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Search Diseases" android:drawablePadding="5dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutBtnSearchMedicine" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_search"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Search Medicine" android:drawablePadding="5dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/colorLight" android:layout_width="match_parent" android:layout_height="120dp" android:layout_weight="1">
+                    <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutBtnMiniPrescription" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_cake_black_24dp"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Food Habit" android:drawablePadding="5dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutBtnNearbyPharmacy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_add_location_black_24dp"/>
+                        <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Nearby Pharmacy" android:drawablePadding="5dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                    <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorLight" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutBtnHome" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_home_black_24dp"/>
+            <TextView android:textSize="15dp" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Home" android:drawablePadding="5dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layoutBtnFavourite" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/ic_favorite_black_24dp"/>
+            <TextView android:textSize="15dp" android:textColor="@color/colorPrimaryDark" android:id="@+id/layoutBtnFabourite" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Favourite" android:drawablePadding="5dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

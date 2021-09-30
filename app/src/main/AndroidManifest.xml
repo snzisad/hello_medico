@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zisad.hellomedico">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.zisad.hellomedico.ViewMedicineActivity"/>
+        <activity android:name="com.zisad.hellomedico.EditMedicineActivity"/>
+        <activity android:name="com.zisad.hellomedico.AddMedicineActivity"/>
+        <activity android:name="com.zisad.hellomedico.MedicineListActivity"/>
+        <activity android:name="com.zisad.hellomedico.ViewFoodActivity"/>
+        <activity android:name="com.zisad.hellomedico.EditFoodActivity"/>
+        <activity android:name="com.zisad.hellomedico.AddFoodDetails"/>
+        <activity android:name="com.zisad.hellomedico.FoodHabitActivity"/>
+        <activity android:name="com.zisad.hellomedico.MainActivity"/>
+        <activity android:name="com.zisad.hellomedico.Login"/>
+        <activity android:name="com.zisad.hellomedico.secondactivity"/>
+        <activity android:name="com.zisad.hellomedico.diseases"/>
+        <activity android:name="com.zisad.hellomedico.C0536sm"/>
+        <activity android:name="com.zisad.hellomedico.Symp"/>
+        <activity android:name="com.zisad.hellomedico.medi"/>
+        <activity android:name="com.zisad.hellomedico.map"/>
+        <activity android:name="com.zisad.hellomedico.add"/>
+        <activity android:name="com.zisad.hellomedico.ListdataActivity"/>
+        <activity android:name="com.zisad.hellomedico.editDiseases"/>
+        <activity android:theme="@style/AppTheme.NoActionBar" android:exported="false" android:label="@string/app_name" android:name="com.zisad.hellomedico.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zisad.hellomedico.DiseasesInfo"/>
+        <activity android:name="com.zisad.hellomedico.FavouriteActivity"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <activity android:label="Nearby Pharmacy" android:name="com.zisad.hellomedico.NearbyPharmacyActivity"/>
+
+    </application>
+
+
+
+</manifest>
