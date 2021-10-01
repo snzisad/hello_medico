@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.location.Location;
-import android.location.LocationListener;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -17,6 +16,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -49,13 +49,13 @@ public class NearbyPharmacyActivity extends FragmentActivity implements OnMapRea
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(C0512R.layout.activity_nearby_pharmacy);
+        setContentView(R.layout.activity_nearby_pharmacy);
         this.progressDialog = new ProgressDialog(this);
         this.progressDialog.setMessage("Searching nearby Pharmacy");
         this.progressDialog.show();
         this.dataTransfer = new Object[2];
         this.places = new GetNearbyPlaces();
-        ((SupportMapFragment) getSupportFragmentManager().findFragmentById(C0512R.C0514id.map)).getMapAsync(this);
+        ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map)).getMapAsync(this);
     }
 
     public void onMapReady(GoogleMap googleMap) {
@@ -91,7 +91,7 @@ public class NearbyPharmacyActivity extends FragmentActivity implements OnMapRea
         googlePlaceUrl.append(sb.toString());
         googlePlaceUrl.append("&type=" + type2);
         googlePlaceUrl.append("&sensor=true");
-        googlePlaceUrl.append("&key=" + getResources().getString(C0512R.string.google_maps_key));
+        googlePlaceUrl.append("&key=" + getResources().getString(R.string.google_maps_key));
         return googlePlaceUrl.toString();
     }
 

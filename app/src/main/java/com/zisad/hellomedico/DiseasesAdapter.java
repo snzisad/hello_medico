@@ -74,8 +74,8 @@ public class DiseasesAdapter extends BaseAdapter implements Filterable {
     }
 
     public View getView(int i, View view, ViewGroup viewGroup) {
-        View v = View.inflate(this.context, C0512R.layout.layout_diseases_list, (ViewGroup) null);
-        ((TextView) v.findViewById(C0512R.C0514id.tvDiseasesName)).setText(this.name.get(i));
+        View v = View.inflate(this.context, R.layout.layout_diseases_list, (ViewGroup) null);
+        ((TextView) v.findViewById(R.id.tvDiseasesName)).setText(this.name.get(i));
         return v;
     }
 

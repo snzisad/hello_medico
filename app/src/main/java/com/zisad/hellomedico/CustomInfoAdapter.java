@@ -14,7 +14,7 @@ public class CustomInfoAdapter implements GoogleMap.InfoWindowAdapter {
 
     public CustomInfoAdapter(Context context2) {
         this.context = context2;
-        this.view = LayoutInflater.from(context2).inflate(C0512R.layout.layout_custom_marker_info, (ViewGroup) null);
+        this.view = LayoutInflater.from(context2).inflate(R.layout.layout_custom_marker_info, (ViewGroup) null);
     }
 
     public View getInfoWindow(Marker marker) {
@@ -28,9 +28,9 @@ public class CustomInfoAdapter implements GoogleMap.InfoWindowAdapter {
     }
 
     private void getData(Marker marker) {
-        TextView textView = (TextView) this.view.findViewById(C0512R.C0514id.tvPharmacyPhone);
-        TextView textView2 = (TextView) this.view.findViewById(C0512R.C0514id.tvcall);
-        ((TextView) this.view.findViewById(C0512R.C0514id.tvPharmacyName)).setText(marker.getTitle());
-        ((TextView) this.view.findViewById(C0512R.C0514id.tvPharmacyLocation)).setText(marker.getSnippet());
+        TextView textView = (TextView) this.view.findViewById(R.id.tvPharmacyPhone);
+        TextView textView2 = (TextView) this.view.findViewById(R.id.tvcall);
+        ((TextView) this.view.findViewById(R.id.tvPharmacyName)).setText(marker.getTitle());
+        ((TextView) this.view.findViewById(R.id.tvPharmacyLocation)).setText(marker.getSnippet());
     }
 }

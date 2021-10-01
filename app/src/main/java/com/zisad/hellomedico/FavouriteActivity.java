@@ -18,9 +18,9 @@ public class FavouriteActivity extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_favourite);
+        setContentView((int) R.layout.activity_favourite);
         super.setTitle("Favourite");
-        this.mListView = (ListView) findViewById(C0512R.C0514id.it1);
+        this.mListView = (ListView) findViewById(R.id.it1);
         this.mDatabaseHelper = new DatabaseHelper(this);
         populateListView();
     }

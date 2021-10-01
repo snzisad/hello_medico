@@ -20,10 +20,10 @@ public class DiseasesInfo extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_diseases_info);
-        this.tvDiseasesName = (TextView) findViewById(C0512R.C0514id.tvDiseasesName);
-        this.tvSymptom = (TextView) findViewById(C0512R.C0514id.tvSymptom);
-        this.tvMedicine = (TextView) findViewById(C0512R.C0514id.tvMedicine);
+        setContentView((int) R.layout.activity_diseases_info);
+        this.tvDiseasesName = (TextView) findViewById(R.id.tvDiseasesName);
+        this.tvSymptom = (TextView) findViewById(R.id.tvSymptom);
+        this.tvMedicine = (TextView) findViewById(R.id.tvMedicine);
         this.databaseHelper = new DatabaseHelper(this);
         Cursor cursor = this.databaseHelper.getDiseasesDetails(DataContainer.f46ID);
         if (cursor.moveToFirst()) {
@@ -36,14 +36,14 @@ public class DiseasesInfo extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu2) {
-        getMenuInflater().inflate(C0512R.C0515menu.diseases_menu, menu2);
+        getMenuInflater().inflate(R.menu.diseases_menu, menu2);
         this.menu = menu2;
         changeFavouriteIcon();
         return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() != C0512R.C0514id.favourite) {
+        if (item.getItemId() != R.id.favourite) {
             return super.onOptionsItemSelected(item);
         }
         changeFavouriteStatus();
@@ -55,24 +55,24 @@ public class DiseasesInfo extends AppCompatActivity {
             if (this.databaseHelper.makeFavourite(Integer.toString(DataContainer.f46ID))) {
                 this.favourite = "1";
                 changeFavouriteIcon();
-                Toast.makeText(this, "Added to favourite", 0).show();
+                Toast.makeText(this, "Added to favourite", Toast.LENGTH_SHORT).show();
                 return;
             }
-            Toast.makeText(this, "Something went wrong, please try again", 0).show();
+            Toast.makeText(this, "Something went wrong, please try again", Toast.LENGTH_SHORT).show();
         } else if (this.databaseHelper.removeFavourite(Integer.toString(DataContainer.f46ID))) {
             this.favourite = "0";
             changeFavouriteIcon();
-            Toast.makeText(this, "Removed from favourite", 0).show();
+            Toast.makeText(this, "Removed from favourite", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Something went wrong, please try again", 0).show();
+            Toast.makeText(this, "Something went wrong, please try again", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void changeFavouriteIcon() {
         if (this.favourite.equals("0")) {
-            this.menu.getItem(0).setIcon(getResources().getDrawable(C0512R.C0513drawable.ic_nonfavorite));
+            this.menu.getItem(0).setIcon(getResources().getDrawable(R.drawable.ic_nonfavorite));
         } else {
-            this.menu.getItem(0).setIcon(getResources().getDrawable(C0512R.C0513drawable.ic_favorite));
+            this.menu.getItem(0).setIcon(getResources().getDrawable(R.drawable.ic_favorite));
         }
     }
 }

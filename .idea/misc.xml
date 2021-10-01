@@ -5,11 +5,22 @@
       <map>
         <entry key="..\:/HelloMedico/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.290625" />
         <entry key="..\:/HelloMedico/app/src/main/res/drawable/ic_star_border_black_24dp.xml" value="0.290625" />
-        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_add.xml" value="0.27447916666666666" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_add.xml" value="0.72" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_add_food_details.xml" value="0.14375" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_add_medicine.xml" value="0.2" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_diseases.xml" value="0.6305263157894737" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_diseases_info.xml" value="0.14375" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_edit_diseases.xml" value="0.27447916666666666" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_edit_food.xml" value="0.27447916666666666" />
         <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_favourite.xml" value="0.27447916666666666" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_map.xml" value="0.27447916666666666" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/activity_test.xml" value="0.27447916666666666" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/app_bar_home.xml" value="0.1" />
         <entry key="..\:/HelloMedico/app/src/main/res/layout/content_home.xml" value="0.27447916666666666" />
         <entry key="..\:/HelloMedico/app/src/main/res/layout/design_layout_snackbar.xml" value="0.27447916666666666" />
         <entry key="..\:/HelloMedico/app/src/main/res/layout/leyout_medicine_list.xml" value="0.27447916666666666" />
+        <entry key="..\:/HelloMedico/app/src/main/res/layout/nav_header_home.xml" value="0.1" />
         <entry key="..\:/HelloMedico/app/src/main/res/layout/notification_action.xml" value="0.27447916666666666" />
         <entry key="..\:/HelloMedico/app/src/main/res/menu/activity_home_drawer.xml" value="0.27447916666666666" />
         <entry key="..\:/HelloMedico/app/src/main/res/menu/diseases_menu.xml" value="0.27447916666666666" />

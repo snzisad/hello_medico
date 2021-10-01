@@ -23,9 +23,9 @@ public class FoodHabitActivity extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_food_habit);
+        setContentView((int) R.layout.activity_food_habit);
         super.setTitle("Food Habit");
-        this.mListView = (ListView) findViewById(C0512R.C0514id.it1);
+        this.mListView = (ListView) findViewById(R.id.it1);
         this.mDatabaseHelper = new DatabaseHelper(this);
         this.foodDatabase = new FoodDatabase(this);
         populateListView();
@@ -63,14 +63,14 @@ public class FoodHabitActivity extends AppCompatActivity {
     /* access modifiers changed from: private */
     public void showOptions() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        View view = getLayoutInflater().inflate(C0512R.layout.layout_options, (ViewGroup) null, false);
-        ((LinearLayout) view.findViewById(C0512R.C0514id.layout_editButton)).setOnClickListener(new View.OnClickListener() {
+        View view = getLayoutInflater().inflate(R.layout.layout_options, (ViewGroup) null, false);
+        ((LinearLayout) view.findViewById(R.id.layout_editButton)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 FoodHabitActivity.this.startActivity(new Intent(FoodHabitActivity.this, EditFoodActivity.class));
                 FoodHabitActivity.this.finish();
             }
         });
-        ((LinearLayout) view.findViewById(C0512R.C0514id.layout_deleteButton)).setOnClickListener(new View.OnClickListener() {
+        ((LinearLayout) view.findViewById(R.id.layout_deleteButton)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 if (FoodHabitActivity.this.foodDatabase.deleteItem(DataContainer.f46ID)) {
                     Toast.makeText(FoodHabitActivity.this, "Successfully Deleted", 0).show();

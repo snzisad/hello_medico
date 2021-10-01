@@ -24,12 +24,12 @@ public class editDiseases extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_edit_diseases);
+        setContentView((int) R.layout.activity_edit_diseases);
         super.setTitle("Update Diseases");
-        this.editText1 = (EditText) findViewById(C0512R.C0514id.f58dn);
-        this.editText2 = (EditText) findViewById(C0512R.C0514id.f59ds);
-        this.editText3 = (EditText) findViewById(C0512R.C0514id.f57dm);
-        this.btnUpdate = (Button) findViewById(C0512R.C0514id.btnUpdate);
+        this.editText1 = (EditText) findViewById(R.id.dn);
+        this.editText2 = (EditText) findViewById(R.id.ds);
+        this.editText3 = (EditText) findViewById(R.id.dm);
+        this.btnUpdate = (Button) findViewById(R.id.btnUpdate);
         this.mDatabaseHelper = new DatabaseHelper(this);
         getData();
         this.btnUpdate.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +84,6 @@ public class editDiseases extends AppCompatActivity {
     }
 
     private void toastMessage(String message) {
-        Toast.makeText(this, message, 0).show();
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

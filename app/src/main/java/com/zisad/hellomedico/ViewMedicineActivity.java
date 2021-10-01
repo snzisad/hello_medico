@@ -15,10 +15,10 @@ public class ViewMedicineActivity extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_view_medicine);
+        setContentView((int) R.layout.activity_view_medicine);
         super.setTitle("Medicibe Details");
-        this.tvDiseasesName = (TextView) findViewById(C0512R.C0514id.tvDiseasesName);
-        this.tvFood = (TextView) findViewById(C0512R.C0514id.tvFood);
+        this.tvDiseasesName = (TextView) findViewById(R.id.tvDiseasesName);
+        this.tvFood = (TextView) findViewById(R.id.tvFood);
         this.medicineDB = new MedicineDB(this);
         this.cursor = this.medicineDB.getFoodDetails(DataContainer.f46ID);
         if (this.cursor.moveToFirst()) {

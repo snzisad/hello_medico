@@ -8,6 +8,6 @@ public class map extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_map);
+        setContentView((int) R.layout.activity_map);
     }
 }

@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt">
     <group android:checkableBehavior="single">
-        <item android:icon="@drawable/ic_message_black_24dp" android:id="@+id/feedback" android:title="Feedback"/>
-        <item android:icon="@drawable/ic_star_border_black_24dp" android:id="@+id/rate" android:title="Rate Us"/>
-        <item android:icon="@drawable/ic_info_outline_black_24dp" android:id="@+id/about" android:title="About Us"/>
+        <item
+            android:icon="@drawable/ic_message_black_24dp"
+            android:id="@+id/feedback"
+            android:title="Feedback"/>
+        <item
+            android:icon="@drawable/ic_star_border_black_24dp"
+            android:id="@+id/rate"
+            android:title="Rate Us"/>
+        <item
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:id="@+id/about"
+            android:title="About Us"/>
     </group>
 </menu>

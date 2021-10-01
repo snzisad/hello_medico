@@ -19,11 +19,11 @@ public class Login extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_login);
+        setContentView((int) R.layout.activity_login);
         super.setTitle("Login");
-        this.Name = (EditText) findViewById(C0512R.C0514id.etName);
-        this.Password = (EditText) findViewById(C0512R.C0514id.etPassword);
-        this.Login = (Button) findViewById(C0512R.C0514id.btnlogin);
+        this.Name = (EditText) findViewById(R.id.etName);
+        this.Password = (EditText) findViewById(R.id.etPassword);
+        this.Login = (Button) findViewById(R.id.btnlogin);
         this.Login.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Login.this.validate(Login.this.Name.getText().toString(), Login.this.Password.getText().toString());

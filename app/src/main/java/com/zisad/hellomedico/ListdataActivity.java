@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import java.util.ArrayList;
 
@@ -27,9 +27,9 @@ public class ListdataActivity extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_list_data_activity);
+        setContentView((int) R.layout.activity_list_data_activity);
         super.setTitle("Dieases List");
-        this.mListView = (ListView) findViewById(C0512R.C0514id.it1);
+        this.mListView = (ListView) findViewById(R.id.it1);
         this.mDatabaseHelper = new DatabaseHelper(this);
         populateListView();
     }
@@ -67,14 +67,14 @@ public class ListdataActivity extends AppCompatActivity {
     /* access modifiers changed from: private */
     public void showOptions() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        View view = getLayoutInflater().inflate(C0512R.layout.layout_options, (ViewGroup) null, false);
-        ((LinearLayout) view.findViewById(C0512R.C0514id.layout_editButton)).setOnClickListener(new View.OnClickListener() {
+        View view = getLayoutInflater().inflate(R.layout.layout_options, (ViewGroup) null, false);
+        ((LinearLayout) view.findViewById(R.id.layout_editButton)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 ListdataActivity.this.startActivity(new Intent(ListdataActivity.this, editDiseases.class));
                 ListdataActivity.this.finish();
             }
         });
-        ((LinearLayout) view.findViewById(C0512R.C0514id.layout_deleteButton)).setOnClickListener(new View.OnClickListener() {
+        ((LinearLayout) view.findViewById(R.id.layout_deleteButton)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 if (ListdataActivity.this.mDatabaseHelper.deleteItem(DataContainer.f46ID)) {
                     Toast.makeText(ListdataActivity.this, "Successfully Deleted", 0).show();
@@ -91,8 +91,8 @@ public class ListdataActivity extends AppCompatActivity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(C0512R.C0515menu.menu_search, menu);
-        ((SearchView) menu.findItem(C0512R.C0514id.search).getActionView()).setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        getMenuInflater().inflate(R.menu.menu_search, menu);
+        ((SearchView) menu.findItem(R.id.search).getActionView()).setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             public boolean onQueryTextSubmit(String s) {
                 ListdataActivity.this.adapter.getFilter().filter(s);
                 return true;

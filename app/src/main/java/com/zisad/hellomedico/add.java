@@ -23,12 +23,12 @@ public class add extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_add);
+        setContentView((int) R.layout.activity_add);
         super.setTitle("Add Medicine");
-        this.editText1 = (EditText) findViewById(C0512R.C0514id.f58dn);
-        this.editText2 = (EditText) findViewById(C0512R.C0514id.f59ds);
-        this.editText3 = (EditText) findViewById(C0512R.C0514id.f57dm);
-        this.btnadd = (Button) findViewById(C0512R.C0514id.btnadd);
+        this.editText1 = (EditText) findViewById(R.id.dn);
+        this.editText2 = (EditText) findViewById(R.id.ds);
+        this.editText3 = (EditText) findViewById(R.id.dm);
+        this.btnadd = (Button) findViewById(R.id.btnadd);
         this.mDatabaseHelper = new DatabaseHelper(this);
         this.btnadd.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -72,6 +72,6 @@ public class add extends AppCompatActivity {
     }
 
     private void toastMessage(String message) {
-        Toast.makeText(this, message, 0).show();
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

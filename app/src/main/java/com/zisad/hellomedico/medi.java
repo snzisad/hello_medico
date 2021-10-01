@@ -15,8 +15,8 @@ public class medi extends AppCompatActivity {
     /* access modifiers changed from: protected */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView((int) C0512R.layout.activity_medi);
-        this.f73tv = (TextView) findViewById(C0512R.C0514id.textView2);
+        setContentView((int) R.layout.activity_medi);
+        this.f73tv = (TextView) findViewById(R.id.textView2);
         this.databaseHelper = new DatabaseHelper(this);
         Cursor cursor = this.databaseHelper.getDiseasesDetails(DataContainer.f46ID);
         if (cursor.moveToFirst()) {
